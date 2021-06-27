@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    width: 75%;
+    margin: 1em auto;
+    padding: 0 1em 3em;
+    border: 3px solid rgb(131, 131, 131);
+    border-radius: 6px;
+}
+
+#relogio {
+    color: black;
+    background-color: white;
+    display: block;
+    position:absolute;
+    border: 2px solid rgb(156, 155, 155);
+    border-radius: 36px;
+    top: 0px;
+    right: 10px;
+}
+
+#cabecalho h1{
+    color: red;
+    text-align: center;
+    font: bolder 45pt helvetica, monospace;
+    margin: 20px;
+}
+
+h2.subtitulo{ 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24pt;
+    color: blue;
+    margin: 24px 0 6px 0;
+}
+
+hr{
+    margin:15px 0;
+}
+
+#sobre p{
+    color: white;
+    text-align: justify;
+    text-indent: 21pt;
+    font: 12pt Arial, sans-serif;
+    padding: 2px;
+}
+
+#contato ul{
+    display: block;
+    position: relative;
+    bottom: 2px;
+    margin: auto 20%;
+}
+
+#contato li{
+    color: white;
+    list-style: none;
+    display: inline;
+    font: 12pt Arial, sans-serif;
+}
+
+a{
+    padding-left: 21pt;
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+}
+
+#contato img{
+    vertical-align: middle;
+    margin: 2px 0;
+    padding-right: 3px;
+}
+

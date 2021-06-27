@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog Pessoal </title>
+</head>
+<body>
+    <header id="cabecalho">
+        <h1> MEU BLOG </h1>
+        <div id="relogio"></div>
+    </header>
+
+    <hr>
+    
+    <article id="sobre">
+        <h2 class="subtitulo"> Quem sou eu?</h2>
+        <p> Meu nome é <b>Brayan Bueno de Carvalho</b>, sou um estudante da área de Tecnologia, por enquanto estou aprendendo de forma autônoma, através de cursos e apostilas pela internet. <strong>Busco aprender sobre tudo</strong>, embora de tantos conteúdos legais para aprender, fico tão empolgado que acabo aprendendo somente o básico sobre cada um e nada muito avançado. </p>
+        <p> Por enquanto, sei o básico de Python e Vim e estou aprendendo HTML, CSS, Javascript, C e SQL. Além de apredner mais sobre algumas bibliotecas do python</p>
+        <p> Amo escrever códigos e ver seu funcionamento!</p>
+    </article>
+
+    <hr>
+
+    <section id="contato">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://github.com/BrayanBC/" target="_blank"><img src="Imagens/INVERTIDOicone-github.png" id="iconeGithub">/BrayanBC </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/brayanbdc/?hl=pt-br" target="_blank"><img src="Imagens/INVERTIDOicone-instagram.png" id="iconeInstagram">/brayanbdc</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/brayan-bueno-de-carvalho-0842a9205/" target="_blank"><img src="Imagens/INVERTIDOicone-linkedin.png" id="iconeLinkedin">/BrayanBuenodeCarvalho</a>
+                </li>
+            <ul>
+        </nav>
+    </section>
+
+    <script>
+        var tempo = new Date();
+        var hora = tempo.getHours()
+        var minutos = tempo.getMinutes()
+        if(minutos<10) {minutos = '0'+minutos}
+        var horario = hora + ':' + minutos
+        var relogio = document.querySelector("div#relogio")
+        relogio.innerHTML = `<h2>${horario}<h2>`
+        
+    </script>
+</body>
+</html>
